@@ -23,7 +23,6 @@ const loginController = require('./controllers/login');
 const loginStoreController = require('./controllers/loginStore');
 const logoutController = require('./controllers/logout')
 
-app.use(express.static('styles.css'))
 app.use(session({
     secret: 'Bouirjan',
     store: mongoStore.create({ mongoUrl: MongoUrl })
