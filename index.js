@@ -28,7 +28,6 @@ app.use(session({
     store: mongoStore.create({ mongoUrl: MongoUrl })
 }))
 app.use(fileUpload())
-// app.use(express.static('public'))
 app.use(express.static(__dirname + "/public/"));
 app.use(expressEdge.engine)
 app.use(express.json())
